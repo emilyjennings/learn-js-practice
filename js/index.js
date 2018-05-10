@@ -1,4 +1,5 @@
-/*
+$(document).ready(function(){
+  /*
 animal = 'dog'
 
 function myAnimal() {
@@ -127,10 +128,12 @@ function removeFromPlaylist(playlist, artistName) {
   delete playlist["Slowdive"]
 }
 */
+window.alert("hello world");
 
 var array = [];
+i = 3
 
-function forLoop (array) {
+function forLoop(array) {
 
 for (var i = 0; i < 24; i++) {
   if (i === 1) {
@@ -141,3 +144,7 @@ for (var i = 0; i < 24; i++) {
 }
 
 }
+
+
+
+});
