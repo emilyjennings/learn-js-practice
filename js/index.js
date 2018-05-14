@@ -127,7 +127,7 @@ function updatePlaylist(playlist, artistName, songTitle) {
 function removeFromPlaylist(playlist, artistName) {
   delete playlist["Slowdive"]
 }
-*/
+
 window.alert("hello world");
 
 array = ["beans"]
@@ -161,5 +161,73 @@ function doWhileLoop(array) {
   } while (array.length > 0 && maybeTrue())
   return array
 }
+
+
+const musicians = ["John Lennon", "Paul McCartney", "George Harrison", "Ringo Starr"];
+const instruments = ["Guitar", "Bass Guitar", "Lead Guitar", "Drums"];
+
+
+function theBeatlesPlay(musicians, instruments) {
+  var array = [];
+  for (let i = 0; i < musicians.length; i++) {
+      array.push(musicians[i] + " plays " + instruments[i])
+  }
+  return array;
+}
+
+const facts = [
+  "He was the last Beatle to learn to drive",
+  "He was never a vegetarian",
+  "He was a choir boy and boy scout",
+  "He hated the sound of his own voice"
+];
+
+function johnLennonFacts(facts) {
+  var factsPlus = []
+  var i = 0
+  while (facts.length > factsPlus.length) {
+    factsPlus.push(facts[i] + "!!!")
+    i++
+  }
+  return factsPlus
+}
+
+*/
+
+
+var array = [];
+
+function takeANumber(array, name) {
+  array.push(name)
+  return "Welcome, " + name + ". You are number " + array.length + " in line."
+}
+
+
+
+function nowServing(array) {
+  var arrayLength = array.length;
+  if (arrayLength > 0) {
+    return "Currently serving " + array.shift() + ".";
+  } else if (arrayLength === 0) {
+    return "There is nobody waiting to be served!";
+  }
+}
+
+
+var line = [];
+
+function currentLine(array) {
+  var arrayLength = array.length
+  if (arrayLength === 0) {
+      return "The line is currently empty.";
+    } else {
+      for (var i=0; i<arrayLength; i++) {
+      line.push(" " + (i+1) + ". " + array[i])
+    }
+    return "The line is currently:" + line;
+  }
+}
+
+
 
 });
